@@ -1,16 +1,86 @@
 template <typename T>
 void ArrayList<T>::bubbleSort() {
     // TODO
+    T placeholder{};
+
+    int length = this->getLength();
+    if (length <= 1) 
+    {
+        return;
+    }
+
+    for (int j = 0; j < length; j++) 
+    {
+        for (int i = 0; i < length - j; i++) 
+        {
+            if (buffer[i] > buffer[i+1]) 
+            {
+                placeholder = buffer[i];
+                buffer[i] = buffer[i+1];
+                buffer[i+1] = placeholder;
+                numSwaps++;
+            } 
+            numComps++;
+        }
+    }
 }
 
 template <typename T>
 void ArrayList<T>::insertionSort() {
     // TODO
+    T placeholder{};
+
+    int length = this->getLength();
+    if (length <= 1) 
+    {
+        return;
+    }
+
+    for(int i = 1; i < length; i++) 
+    {
+        for (int j = i; j > 0; j--) 
+        {
+            if (buffer[j] < buffer[j-1]) 
+            {
+                placeholder = buffer[j-1];
+                buffer[j-1] = buffer[j];
+                buffer[j] = placeholder;
+                numSwaps++;
+            }   
+            numComps++;       
+        }
+    }
 }
 
 template <typename T>
 void ArrayList<T>::selectionSort() {
     // TODO
+    int min;
+    T placeholder{};
+
+    int length = this->getLength();
+    if (length <= 1) 
+    {
+        return;
+    }
+
+    for (int i = 0; i < length; i++) 
+    {
+        min = i;
+        for (int j = i; j < length; j++) 
+        {
+            if (buffer[min] > buffer[j]) 
+            {
+                min = j;
+            }
+            numComps++;
+        }
+        placeholder = buffer[i];
+        buffer[i] = buffer[min];
+        buffer[min] = placeholder;
+        numSwaps++;
+    }
+
 }
 
 /*******************************************************************************
