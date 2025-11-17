@@ -1,0 +1,97 @@
+***USING BUBBLE SORT:***
+Welcome to my dictionary program!
+Here are your options:
+        1. Find
+        2. Insert
+        3. Remove
+        4. Sort
+        5. Size
+        6. Clear
+        7. Print
+        8. Quit
+Enter your option: 4
+What kind of sort algorithm should be used?
+        1. Bubble sort
+        2. Selection sort
+        3. Insertion sort
+1
+Number of key comparisons: 28
+Number of swaps: 15
+Enter your option: 7
+--------------------------------------------------------------------------------
+   0 | banana                    | a fruit that many like, or a phone
+   1 | cactus                    | a pointy plant
+   2 | dog                       | a domesticated fluff ball
+   3 | graph                     | an awesome data structure!
+   4 | haskell                   | fantastic programming language, go learn it
+   5 | igloo                     | a cool house
+   6 | phoenix                   | a bird on fire
+   7 | quack                     | said Mr. Duck
+--------------------------------------------------------------------------------
+Enter your option: 8
+
+
+***USING SELECTION SORT:***
+Welcome to my dictionary program!
+Here are your options:
+        1. Find
+        2. Insert
+        3. Remove
+        4. Sort
+        5. Size
+        6. Clear
+        7. Print
+        8. Quit
+Enter your option: 4       
+What kind of sort algorithm should be used?
+        1. Bubble sort
+        2. Selection sort
+        3. Insertion sort
+2
+Number of key comparisons: 28
+Number of swaps: 8
+Enter your option: 7
+--------------------------------------------------------------------------------
+   0 | banana                    | a fruit that many like, or a phone
+   1 | cactus                    | a pointy plant
+   2 | dog                       | a domesticated fluff ball
+   3 | graph                     | an awesome data structure!
+   4 | haskell                   | fantastic programming language, go learn it
+   5 | igloo                     | a cool house
+   6 | phoenix                   | a bird on fire
+   7 | quack                     | said Mr. Duck
+--------------------------------------------------------------------------------
+Enter your option: 8
+
+
+***USING INSERTION SORT:***
+Welcome to my dictionary program!
+Here are your options:
+        1. Find
+        2. Insert
+        3. Remove
+        4. Sort
+        5. Size
+        6. Clear
+        7. Print
+        8. Quit
+Enter your option: 4
+What kind of sort algorithm should be used?
+        1. Bubble sort
+        2. Selection sort
+        3. Insertion sort
+3
+Number of key comparisons: 20
+Number of swaps: 15
+Enter your option: 7
+--------------------------------------------------------------------------------
+   0 | banana                    | a fruit that many like, or a phone
+   1 | cactus                    | a pointy plant
+   2 | dog                       | a domesticated fluff ball
+   3 | graph                     | an awesome data structure!
+   4 | haskell                   | fantastic programming language, go learn it
+   5 | igloo                     | a cool house
+   6 | phoenix                   | a bird on fire
+   7 | quack                     | said Mr. Duck
+--------------------------------------------------------------------------------
+Enter your option: 8

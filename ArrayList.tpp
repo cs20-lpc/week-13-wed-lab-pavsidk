@@ -11,7 +11,7 @@ void ArrayList<T>::bubbleSort() {
 
     for (int j = 0; j < length; j++) 
     {
-        for (int i = 0; i < length - j; i++) 
+        for (int i = 0; i < length - j - 1; i++) 
         {
             if (buffer[i] > buffer[i+1]) 
             {
@@ -28,29 +28,35 @@ void ArrayList<T>::bubbleSort() {
 template <typename T>
 void ArrayList<T>::insertionSort() {
     // TODO
-    T placeholder{};
-
     int length = this->getLength();
     if (length <= 1) 
     {
         return;
     }
-
-    for(int i = 1; i < length; i++) 
+    for (int i = 1; i < length; i++) 
     {
-        for (int j = i; j > 0; j--) 
+        T key = buffer[i];
+        int j = i - 1;
+
+        while (j >= 0) 
         {
-            if (buffer[j] < buffer[j-1]) 
+            numComps++;
+
+            if (buffer[j] > key) 
             {
-                placeholder = buffer[j-1];
-                buffer[j-1] = buffer[j];
-                buffer[j] = placeholder;
+                buffer[j + 1] = buffer[j];
                 numSwaps++;
-            }   
-            numComps++;       
+                j--;
+            } else 
+            {
+                break;
+            }
         }
+
+        buffer[j + 1] = key;
     }
 }
+
 
 template <typename T>
 void ArrayList<T>::selectionSort() {
@@ -67,7 +73,7 @@ void ArrayList<T>::selectionSort() {
     for (int i = 0; i < length; i++) 
     {
         min = i;
-        for (int j = i; j < length; j++) 
+        for (int j = i + 1; j < length; j++) 
         {
             if (buffer[min] > buffer[j]) 
             {
